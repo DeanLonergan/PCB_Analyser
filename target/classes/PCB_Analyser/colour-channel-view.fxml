@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PCB_Analyser.ChannelController">
+    <TabPane minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="30.0" tabMaxWidth="80.0" tabMinHeight="30.0" tabMinWidth="50.0">
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+        <Tab text="Red">
+            <ImageView fx:id="redImageView" fitHeight="250.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="5.0" />
+        </Tab>
+        <Tab text="Green">
+            <ImageView fx:id="greenImageView" fitHeight="250.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="5.0" />
+        </Tab>
+        <Tab text="Blue">
+            <ImageView fx:id="blueImageView" fitHeight="250.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true" translateX="10.0" translateY="5.0" />
+        </Tab>
+    </TabPane>
+</VBox>
