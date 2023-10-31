@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PCB_Analyser.controllers.ParametersController">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+            <ImageView fx:id="parametersImageView" fitHeight="512.0" fitWidth="512.0" layoutX="12.0" layoutY="12.0" onMouseEntered="#colour" pickOnBounds="true" preserveRatio="true">
+            <cursor>
+               <Cursor fx:constant="CROSSHAIR" />
+            </cursor>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <Pane maxHeight="70.0" minHeight="70.0">
+      <Label layoutX="25.0" layoutY="12.0" text="Component" />
+       <ChoiceBox fx:id="componentType" layoutX="21.0" layoutY="30.0" onAction="#type" prefHeight="25.0" prefWidth="70.0" value="Resistor">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <String fx:value="Resistor" />
+                   <String fx:value="Capacitor" />
+                   <String fx:value="Chip" />
+               </FXCollections>
+           </items>
+       </ChoiceBox>
+       <Rectangle fx:id="displaySelectedColour" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="101.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+       <Label layoutX="165.0" layoutY="12.0" text="Distance" />
+       <Slider fx:id="searchDistanceSlider" layoutX="141.0" layoutY="36.0" majorTickUnit="5.0" minorTickCount="1" onMouseReleased="#distance" prefHeight="14.0" prefWidth="99.0" />
+       <Label layoutX="274.0" layoutY="12.0" text="Size" />
+       <ChoiceBox fx:id="componentSize" layoutX="249.0" layoutY="30.0" onAction="#componentSize" prefHeight="25.0" prefWidth="70.0" value="Default">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <String fx:value="Default" />
+                   <String fx:value="Small" />
+                   <String fx:value="Large" />
+               </FXCollections>
+           </items>
+       </ChoiceBox>
+      <Button layoutX="328.0" layoutY="30.0" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button layoutX="398.0" layoutY="30.0" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+       <Button fx:id="saveButton" layoutX="467.0" layoutY="30.0" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#set" text="Set" />
+   </Pane>
+</VBox>
