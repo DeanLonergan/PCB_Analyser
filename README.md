@@ -39,7 +39,7 @@ I designed this program during my fourth semester of college for Data Structures
 ![PCB Analysis](https://github.com/DeanLonergan/PCB_Analyser/assets/74914758/a65ef54b-b27f-4559-adad-52966c892571)
 
 ## Appendix
-I have included an number of sample images inside of the repo, they can be found here:
+I have included a number of sample images inside of the repo, they can be found here:
 
 ![tempsnip](https://github.com/DeanLonergan/PCB_Analyser/assets/74914758/4bc66afb-ecc2-4137-9f90-b5db09d21441)
 
