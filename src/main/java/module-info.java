@@ -1,8 +1,6 @@
 module com.pcb_analyser {
     requires javafx.controls;
     requires javafx.fxml;
-    requires jmh.core;
-
 
     exports PCB_Analyser.controllers;
     opens PCB_Analyser.controllers to javafx.fxml;
