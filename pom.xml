@@ -11,8 +11,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>5.8.1</junit.version>
-        <jmh.version>1.33</jmh.version>
     </properties>
 
     <dependencies>
@@ -25,28 +23,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>15.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.openjdk.jmh</groupId>
-            <artifactId>jmh-core</artifactId>
-            <version>1.33</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjdk.jmh</groupId>
-            <artifactId>jmh-generator-annprocess</artifactId>
-            <version>1.33</version>
         </dependency>
     </dependencies>
     <build>
@@ -69,7 +45,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.pcb_analyser/com.pcb_analyser.HelloApplication</mainClass>
+                            <mainClass>PCB_Analyser.main.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
