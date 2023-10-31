@@ -1,8 +1,19 @@
 # Compiled class file
 *.class
 
-# Target
-target/
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# Maven build directory
+/target/
+
+# Git specific files
+.gitattributes
+
+# OS specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
 
 # Log file
 *.log
